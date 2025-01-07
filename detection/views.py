@@ -1,22 +1,21 @@
-from ultralytics import YOLO
-
 from django.shortcuts import render
 
-from .forms import ImageDetectionForm  # Import your form
+from .forms import ImageDetectionForm
 
-from .models import ImageDetection  # Import your ImageDetection model
+from .models import ImageDetection
 
 import cv2
 
 import os
 
-from django.conf import settings  # Import settings for MEDIA_ROOT and MEDIA_URL
+from django.conf import settings
+
+from ultralytics import YOLO
 
 
-# Load the YOLO model globally to avoid reloading it on every request
+# Load the YOLO model globally
 
 model = YOLO('yolov8n.pt')
-
 
 
 def detect_objects(request):
@@ -35,7 +34,7 @@ def detect_objects(request):
 
             
 
-            # Read the uploaded image using its absolute path
+            # Read the uploaded image
 
             uploaded_image_path = image_detection.uploaded_image.path
 
@@ -43,21 +42,21 @@ def detect_objects(request):
 
             
 
-            # Run YOLO detection on the image
+            # Run YOLO detection
 
             results = model(image)
 
             
 
-            # Annotate the image with detection results using plot() on the first result
+            # Annotate the image (accessing the first result, as it should contain one image)
 
-            annotated_image = results[0].plot()  # Use the first Results object in the list
+            annotated_image = results[0].plot()  # 'results[0]' contains the detection result for the image
 
             
 
             # Define the path to save the annotated image
 
-            output_image_name = f"output_{image_detection.id}.jpg"  # Use unique names to avoid overwriting
+            output_image_name = f"output_{image_detection.id}.jpg"
 
             output_image_path = os.path.join(settings.MEDIA_ROOT, output_image_name)
 
@@ -69,15 +68,30 @@ def detect_objects(request):
 
             
 
-            # Update the ImageDetection instance with the output image URL
+            # Save the URL of the annotated image to the database
 
             image_detection.output_image = os.path.join(settings.MEDIA_URL, output_image_name)
 
             image_detection.save()
 
+
+            # Prepare detection results to pass to the template
+
+            detection_results = []
+
+            for box, score, class_id in zip(results[0].boxes.xywh, results[0].boxes.conf, results[0].boxes.cls):
+
+                detection_results.append({
+
+                    'name': model.names[int(class_id)],
+
+                    'confidence': round(score.item() * 100, 2)  # Convert to percentage
+
+                })
+
             
 
-            # Return the response with uploaded and output image URLs
+            # Return the template with results
 
             return render(
 
@@ -89,9 +103,11 @@ def detect_objects(request):
 
                     'form': form,
 
-                    'uploaded_image': image_detection.uploaded_image.url,  # URL for uploaded image
+                    'uploaded_image': image_detection.uploaded_image,
 
-                    'output_image': image_detection.output_image  # URL for output image
+                    'output_image': image_detection.output_image,
+
+                    'detection_results': detection_results
 
                 }
 
@@ -99,27 +115,12 @@ def detect_objects(request):
 
         else:
 
-            # Handle invalid form submission
+            # Handle form validation failure
 
-            return render(
+            return render(request, 'home.html', {'form': form, 'error': 'Invalid form submission.'})
 
-                request,
-
-                'home.html',
-
-                {
-
-                    'form': form,
-
-                    'error': 'Invalid form submission.'
-
-                }
-
-            )
 
     else:
-
-        # Render an empty form for GET requests
 
         form = ImageDetectionForm()
 

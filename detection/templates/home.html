@@ -2,52 +2,295 @@
 
 <html lang="en">
 
+
 <head>
 
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Object Detection</title>
+    <meta name="description" content="omanAI: Object detection and classification powered by machine learning algorithms.">
+
+    <title>omanAI</title>
+
+    <!-- Add any CSS frameworks or your custom styles here -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+
+            font-family: 'Poppins', sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #f4f7f6;
+
+            color: #333;
+
+        }
+
+
+        header {
+
+            background-color: #2b2b2b;
+
+            color: white;
+
+            padding: 20px;
+
+            text-align: center;
+
+        }
+
+
+        header h1 {
+
+            font-size: 2.5rem;
+
+            margin: 0;
+
+        }
+
+
+        .container {
+
+            width: 80%;
+
+            max-width: 1200px;
+
+            margin: 30px auto;
+
+            background-color: white;
+
+            padding: 20px;
+
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+            border-radius: 8px;
+
+        }
+
+
+        .description {
+
+            margin: 20px 0;
+
+            font-size: 1.2rem;
+
+        }
+
+
+        .form-section {
+
+            background-color: #f8f8f8;
+
+            padding: 30px;
+
+            border-radius: 8px;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+        .form-section h2 {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .upload-btn {
+
+            background-color: #4CAF50;
+
+            color: white;
+
+            padding: 10px 20px;
+
+            font-size: 1.1rem;
+
+            border: none;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            transition: background-color 0.3s;
+
+        }
+
+
+        .upload-btn:hover {
+
+            background-color: #45a049;
+
+        }
+
+
+        .output-section {
+
+            margin-top: 30px;
+
+        }
+
+
+        .output-section img {
+
+            width: 100%;
+
+            max-width: 500px;
+
+            border-radius: 8px;
+
+        }
+
+
+        .classification-results {
+
+            margin-top: 20px;
+
+            font-size: 1.1rem;
+
+        }
+
+
+        .error-message {
+
+            color: red;
+
+            margin-top: 20px;
+
+        }
+
+
+        footer {
+
+            background-color: #2b2b2b;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 10px 0;
+
+            margin-top: 40px;
+
+        }
+
+    </style>
 
 </head>
 
+
 <body>
 
-    <h1>Object Detection Using AI</h1>
 
-    <form method="POST" enctype="multipart/form-data">
+    <header>
 
-        {% csrf_token %}
+        <h1>omanAI</h1>
 
-        {{ form.as_p }}
+        <p>Developed and trained by Joshua, a Computer Science graduate skilled in machine learning algorithms and web development.</p>
 
-        <button type="submit">Upload Image</button>
-
-    </form>
-
-    
-
-{% if uploaded_image %}
-
-    <h3>Uploaded Image</h3>
-
-    <img src="{{ uploaded_image }}" alt="Uploaded Image" width="400px" />
-
-{% endif %}
+    </header>
 
 
-{% if output_image %}
+    <div class="container">
 
-    <h3>Detection Result</h3>
+        <section class="description">
 
-    <img src="{{ output_image }}" alt="Detection Result" width="400px" />
+            <h2>About omanAI</h2>
 
-    <br />
+            <p>omanAI combines powerful object detection and classification techniques. Just upload an image, and the AI will automatically detect objects and classify them with accuracy. Whether it's books, vehicles, or other common objects, omanAI delivers results with speed and precision.</p>
 
-    <a href="{{ output_image }}" download>Download Output Image</a>
+        </section>
 
-{% endif %}
+
+        <section class="form-section">
+
+            <h2>Upload an Image for Object Detection and Classification</h2>
+
+            <form method="POST" enctype="multipart/form-data">
+
+                {% csrf_token %}
+
+                {{ form.as_p }}
+
+                <button type="submit" class="upload-btn">Upload Image</button>
+
+            </form>
+
+        </section>
+
+
+        {% if uploaded_image %}
+
+        <section class="output-section">
+
+            <h2>Detection and Classification Results</h2>
+
+            <p><strong>Uploaded Image:</strong></p>
+
+            <img src="{{ uploaded_image.url }}" alt="Uploaded Image">
+
+            <p><strong>Annotated Image:</strong></p>
+
+            <img src="{{ output_image }}" alt="Annotated Image">
+
+            <br/>
+            <a href="{{ output_image }}" download>Download Output Image</a>
+            <br>
+            <!-- Display classification results -->
+
+            <div class="classification-results">
+
+                <h3>Detected Objects:</h3>
+
+                <ul>
+
+                    {% for item in detection_results %}
+
+                    <li>{{ item.name }} - Confidence: {{ item.confidence }}%</li>
+
+                    {% endfor %}
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        {% endif %}
+
+
+        {% if error %}
+
+        <div class="error-message">
+
+            <p>{{ error }}</p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+
+    <footer>
+
+        <p>&copy; 2025 omanAI - All Rights Reserved</p>
+
+    </footer>
+
 
 </body>
+
+
 </html>
+
