@@ -1,0 +1,206 @@
+Watching for file changes with StatReloader
+Using cache found in /home/user/.cache/torch/hub/ultralytics_yolov5_master
+Performing system checks...
+
+YOLOv5 🚀 2025-1-6 Python-3.10.12 torch-2.5.1+cu124 CPU
+
+Fusing layers... 
+[W107 04:53:17.649081205 NNPACK.cpp:61] Could not initialize NNPACK! Reason: Unsupported hardware.
+YOLOv5s summary: 213 layers, 7225885 parameters, 0 gradients, 16.4 GFLOPs
+Adding AutoShape... 
+[07/Jan/2025 04:53:43] "GET / HTTP/1.1" 200 717
+Not Found: /favicon.ico
+[07/Jan/2025 04:53:44] "GET /favicon.ico HTTP/1.1" 404 2641
+[07/Jan/2025 04:54:52] "GET / HTTP/1.0" 200 717
+[07/Jan/2025 04:56:01] "GET / HTTP/1.0" 200 717
+[07/Jan/2025 04:56:44] "POST / HTTP/1.1" 200 865
+/home/user/.cache/torch/hub/ultralytics_yolov5_master/models/common.py:892: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(autocast):
+[07/Jan/2025 04:57:16] "POST / HTTP/1.1" 200 1021
+[07/Jan/2025 04:57:16] "GET /media/uploads/tester.jpg HTTP/1.1" 200 18523
+[07/Jan/2025 04:57:16] "GET /media/output_18.jpg HTTP/1.1" 200 34577
+/home/user/object_detection_ui/detection/views.py changed, reloading.
+System check identified no issues (0 silenced).
+January 07, 2025 - 04:53:17
+Django version 5.1.4, using settings 'object_detection_ui.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/user/abduction_env/lib/python3.10/site-packages/torch/hub.py:330: UserWarning: You are about to download and run code from an untrusted repository. In a future release, this won't be allowed. To add the repository to your trusted list, change the command to {calling_fn}(..., trust_repo=False) and a command prompt will appear asking for an explicit confirmation of trust, or load(..., trust_repo=True), which will assume that the prompt is to be answered with 'yes'. You can also use load(..., trust_repo='check') which will only prompt for confirmation if the repo is not already trusted. This will eventually be the default behaviour
+  warnings.warn(
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user/object_detection_ui/object_detection_ui/urls.py", line 32, in <module>
+    path('', include('detection.urls')),
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user/object_detection_ui/detection/urls.py", line 5, in <module>
+    from . import views
+  File "/home/user/object_detection_ui/detection/views.py", line 20, in <module>
+    model = torch.hub.load('ultralytics/yolov8', 'yolov8s')  # Adjust for your YOLO version and weights
+  File "/home/user/abduction_env/lib/python3.10/site-packages/torch/hub.py", line 638, in load
+    repo_or_dir = _get_cache_or_reload(
+  File "/home/user/abduction_env/lib/python3.10/site-packages/torch/hub.py", line 258, in _get_cache_or_reload
+    _validate_not_a_forked_repo(repo_owner, repo_name, ref)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/torch/hub.py", line 203, in _validate_not_a_forked_repo
+    response = json.loads(_read_url(Request(url, headers=headers)))
+  File "/home/user/abduction_env/lib/python3.10/site-packages/torch/hub.py", line 185, in _read_url
+    with urlopen(url) as r:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+Watching for file changes with StatReloader
+/home/user/abduction_env/lib/python3.10/site-packages/torch/hub.py:330: UserWarning: You are about to download and run code from an untrusted repository. In a future release, this won't be allowed. To add the repository to your trusted list, change the command to {calling_fn}(..., trust_repo=False) and a command prompt will appear asking for an explicit confirmation of trust, or load(..., trust_repo=True), which will assume that the prompt is to be answered with 'yes'. You can also use load(..., trust_repo='check') which will only prompt for confirmation if the repo is not already trusted. This will eventually be the default behaviour
+  warnings.warn(
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user/object_detection_ui/object_detection_ui/urls.py", line 32, in <module>
+    path('', include('detection.urls')),
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user/object_detection_ui/detection/urls.py", line 5, in <module>
+    from . import views
+  File "/home/user/object_detection_ui/detection/views.py", line 20, in <module>
+    model = torch.hub.load('ultralytics/yolov8', 'yolov8s')  # Adjust for your YOLO version and weights
+  File "/home/user/abduction_env/lib/python3.10/site-packages/torch/hub.py", line 638, in load
+    repo_or_dir = _get_cache_or_reload(
+  File "/home/user/abduction_env/lib/python3.10/site-packages/torch/hub.py", line 258, in _get_cache_or_reload
+    _validate_not_a_forked_repo(repo_owner, repo_name, ref)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/torch/hub.py", line 203, in _validate_not_a_forked_repo
+    response = json.loads(_read_url(Request(url, headers=headers)))
+  File "/home/user/abduction_env/lib/python3.10/site-packages/torch/hub.py", line 185, in _read_url
+    with urlopen(url) as r:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 07, 2025 - 05:15:47
+Django version 5.1.4, using settings 'object_detection_ui.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+
+[W107 05:15:58.955342285 NNPACK.cpp:61] Could not initialize NNPACK! Reason: Unsupported hardware.
+0: 480x640 1 car, 1 book, 525.2ms
+Speed: 7.7ms preprocess, 525.2ms inference, 7.4ms postprocess per image at shape (1, 3, 480, 640)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/user/object_detection_ui/detection/views.py", line 53, in detect_objects
+    annotated_image = results.render()[0]  # YOLO's render method returns an annotated image
+AttributeError: 'list' object has no attribute 'render'
+[07/Jan/2025 05:15:58] "POST / HTTP/1.1" 500 66273
+[07/Jan/2025 05:20:49] "GET / HTTP/1.0" 200 717
+[07/Jan/2025 05:32:00] "GET / HTTP/1.0" 200 717
+/home/user/object_detection_ui/detection/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
