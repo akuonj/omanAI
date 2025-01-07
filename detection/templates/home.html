@@ -13,11 +13,14 @@
 
     <title>omanAI</title>
 
+
     <!-- Add any CSS frameworks or your custom styles here -->
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
+
+        /* Base Styles */
 
         body {
 
@@ -58,7 +61,7 @@
 
         .container {
 
-            width: 80%;
+            width: 90%;
 
             max-width: 1200px;
 
@@ -184,6 +187,110 @@
 
         }
 
+
+        /* Responsive Styles */
+
+        @media (max-width: 768px) {
+
+            header h1 {
+
+                font-size: 2rem; /* Reduce font size for mobile devices */
+
+            }
+
+
+            header p {
+
+                font-size: 1rem;
+
+            }
+
+
+            .container {
+
+                padding: 15px;
+
+            }
+
+
+            .description,
+
+            .form-section h2 {
+
+                font-size: 1rem;
+
+            }
+
+
+            .upload-btn {
+
+                font-size: 1rem;
+
+                padding: 8px 16px;
+
+            }
+
+
+            .output-section img {
+
+                max-width: 100%;
+
+            }
+
+
+            .classification-results {
+
+                font-size: 1rem;
+
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            header h1 {
+
+                font-size: 1.5rem;
+
+            }
+
+
+            header p {
+
+                font-size: 0.9rem;
+
+            }
+
+
+            .container {
+
+                width: 95%;
+
+                padding: 10px;
+
+            }
+
+
+            .form-section,
+
+            .output-section {
+
+                padding: 15px;
+
+            }
+
+
+            .upload-btn {
+
+                font-size: 0.9rem;
+
+                padding: 6px 12px;
+
+            }
+
+        }
+
     </style>
 
 </head>
@@ -202,6 +309,7 @@
 
 
     <div class="container">
+
 
         <section class="description">
 
@@ -239,13 +347,18 @@
 
             <img src="{{ uploaded_image.url }}" alt="Uploaded Image">
 
+
             <p><strong>Annotated Image:</strong></p>
 
             <img src="{{ output_image }}" alt="Annotated Image">
 
-            <br/>
+            <br />
+
             <a href="{{ output_image }}" download>Download Output Image</a>
-            <br>
+
+            <br />
+
+
             <!-- Display classification results -->
 
             <div class="classification-results">
@@ -263,6 +376,7 @@
                 </ul>
 
             </div>
+
 
         </section>
 
