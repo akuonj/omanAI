@@ -204,3 +204,883 @@ Watching for file changes with StatReloader
 Performing system checks...
 
 System check identified no issues (0 silenced).
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+[07/Jan/2025 07:42:29] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 07:57:54] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 08:05:32] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 08:12:32] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 08:13:28] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[07/Jan/2025 08:19:06] "GET /favicon.ico HTTP/1.1" 404 2641
+Not Found: /agc/css/style.css
+[07/Jan/2025 08:39:50] "GET /agc/css/style.css HTTP/1.0" 404 2654
+January 07, 2025 - 07:42:29
+Django version 5.1.4, using settings 'object_detection_ui.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+
+[W107 09:01:29.575397821 NNPACK.cpp:61] Could not initialize NNPACK! Reason: Unsupported hardware.
+0: 384x640 1 car, 336.7ms
+Speed: 11.9ms preprocess, 336.7ms inference, 2.3ms postprocess per image at shape (1, 3, 384, 640)
+[07/Jan/2025 09:01:30] "POST / HTTP/1.1" 200 6130
+[07/Jan/2025 09:01:30] "GET /media/uploads/Audi_pic1.jpg HTTP/1.1" 200 8344
+[07/Jan/2025 09:01:30] "GET /media/output_48.jpg HTTP/1.1" 200 21702
+
+0: 448x640 16 persons, 1 frisbee, 370.5ms
+Speed: 7.6ms preprocess, 370.5ms inference, 2.2ms postprocess per image at shape (1, 3, 448, 640)
+[07/Jan/2025 09:03:27] "POST / HTTP/1.1" 200 7418
+[07/Jan/2025 09:03:27] "GET /media/uploads/manyPeople_mFdZNZk.jpg HTTP/1.1" 200 72488
+[07/Jan/2025 09:03:27] "GET /media/output_49.jpg HTTP/1.1" 200 158561
+
+0: 640x640 3 persons, 1 car, 491.3ms
+Speed: 5.6ms preprocess, 491.3ms inference, 2.0ms postprocess per image at shape (1, 3, 640, 640)
+[07/Jan/2025 09:05:55] "POST / HTTP/1.1" 200 6377
+[07/Jan/2025 09:05:55] "GET /media/uploads/profileIMG_N8OEfIC.jpg HTTP/1.1" 200 24039
+[07/Jan/2025 09:05:55] "GET /media/output_50.jpg HTTP/1.1" 200 53155
+
+0: 288x640 1 person, 1 motorcycle, 290.2ms
+Speed: 2.5ms preprocess, 290.2ms inference, 2.1ms postprocess per image at shape (1, 3, 288, 640)
+[07/Jan/2025 09:06:23] "POST / HTTP/1.1" 200 6220
+[07/Jan/2025 09:06:23] "GET /media/uploads/bike_Xvi4ZtY.jpg HTTP/1.1" 200 11638
+[07/Jan/2025 09:06:23] "GET /media/output_51.jpg HTTP/1.1" 200 28724
+[07/Jan/2025 09:06:37] "GET /media/output_51.jpg HTTP/1.1" 200 28724
+[07/Jan/2025 09:09:35] code 400, message Bad request version ('o¿±\x00')
+[07/Jan/2025 09:09:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:09:35] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00')
+[07/Jan/2025 09:09:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:09:38] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 09:10:06] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 09:10:39] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 09:10:53] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 09:13:36,082] - Broken pipe from ('41.220.242.250', 3212)
+Not Found: /agc/css/style.css
+[07/Jan/2025 09:14:05] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 09:19:19] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 09:21:33] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 09:23:15] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 09:24:48] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 09:26:27] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 09:31:39] code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+[07/Jan/2025 09:31:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:31:39] code 400, message Bad request version ('Ý\x10\x8b7éx\x045<Û|G0\x12O¨\x8b®õaT¹UmüT\x1b¹ö')
+[07/Jan/2025 09:31:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /favicon.ico
+[07/Jan/2025 09:31:39] "GET /favicon.ico HTTP/1.1" 404 2641
+[07/Jan/2025 09:32:39] code 400, message Bad request version ('Q(\x9f\x9cô\x96!|\x06\x87c\x8e\x92x\x8c2õ\x02jÊHÝ\x90EOÆaD\x96K¸2qt\x80\x94À|.àd\x01úz')
+[07/Jan/2025 09:32:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:32:39] code 400, message Bad request version ('«3ýAÁ')
+[07/Jan/2025 09:32:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:33:39] code 400, message Bad request version ('\x93\x87\x96')
+[07/Jan/2025 09:33:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:33:39] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x1a\x1a\x00\x00\x00')
+[07/Jan/2025 09:33:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:34:39] code 400, message Bad request version (':Õ§')
+[07/Jan/2025 09:34:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:34:39] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+[07/Jan/2025 09:34:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:34:40] code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sZZ\x00\x00\x00')
+[07/Jan/2025 09:34:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:34:40] code 400, message Bad request version ('@tÇo1S´E\x08\x9f¨$\x05Ïµ4ã\x1b}$\x87\x91:gÆñ\x80¶*ª#Lf')
+[07/Jan/2025 09:34:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+0: 288x640 4 persons, 218.7ms
+Speed: 4.7ms preprocess, 218.7ms inference, 1.9ms postprocess per image at shape (1, 3, 288, 640)
+[07/Jan/2025 09:34:40] "POST / HTTP/1.1" 200 6382
+[07/Jan/2025 09:34:40] "GET /media/uploads/IMG-20240630-WA0088.jpg HTTP/1.1" 200 86796
+[07/Jan/2025 09:34:40] "GET /media/output_52.jpg HTTP/1.1" 200 184484
+[07/Jan/2025 09:39:21] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 09:40:05] code 400, message Bad request version ('¦ÅéC¨§Ïà\x93ÎÞZäÁ\x1a\x03ùR\x1bO3e\x80íKÆ¯\x19:')
+[07/Jan/2025 09:40:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:40:05] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03\x08\x07G\x89Vâ\x14ã')
+[07/Jan/2025 09:40:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:40:08] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 09:40:17] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 09:46:06] code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x037²æ\x13')
+[07/Jan/2025 09:46:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:46:06] code 400, message Bad request version ('\x02h2\x08http/1.1\x00#\x00\x00\x003\x04ï\x04í')
+[07/Jan/2025 09:46:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:46:07] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[07/Jan/2025 09:46:07] "GET /favicon.ico HTTP/1.1" 404 2641
+[07/Jan/2025 09:46:07] code 400, message Bad request version ('òjåÇãgÊV©ÝìÖIµÑ\x96,\x00Ð¨>þ\x06qò\x84\x9d\x94Ä3Ï\x9aóÏ\x11{õ\x14upa\x88<»luØ-×HºR\\M°')
+[07/Jan/2025 09:46:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:46:07] code 400, message Bad request version ('\x00\x02\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00')
+[07/Jan/2025 09:46:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:46:22] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063::\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+[07/Jan/2025 09:46:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 09:46:22] code 400, message Bad request version ('\x00#\x00\x00ÿ\x01\x00\x01\x00\x00')
+[07/Jan/2025 09:46:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+0: 640x544 1 person, 3 cars, 1 bus, 1 truck, 245.4ms
+Speed: 6.7ms preprocess, 245.4ms inference, 1.8ms postprocess per image at shape (1, 3, 640, 544)
+[07/Jan/2025 09:46:23] "POST / HTTP/1.1" 200 6519
+[07/Jan/2025 09:46:23] "GET /media/uploads/1000530834.jpg HTTP/1.1" 200 71300
+[07/Jan/2025 09:46:23] "GET /media/output_53.jpg HTTP/1.1" 200 153377
+
+0: 640x320 (no detections), 341.8ms
+Speed: 3.4ms preprocess, 341.8ms inference, 2.5ms postprocess per image at shape (1, 3, 640, 320)
+[07/Jan/2025 09:46:31] "POST / HTTP/1.1" 200 6054
+[07/Jan/2025 09:46:32] "GET /media/uploads/1000531420.jpg HTTP/1.1" 200 71661
+[07/Jan/2025 09:46:32] "GET /media/output_54.jpg HTTP/1.1" 200 127278
+
+0: 640x480 2 persons, 1 chair, 1 laptop, 478.5ms
+Speed: 3.9ms preprocess, 478.5ms inference, 3.4ms postprocess per image at shape (1, 3, 640, 480)
+[07/Jan/2025 09:46:48] "POST / HTTP/1.1" 200 6372
+[07/Jan/2025 09:46:49] "GET /media/uploads/1000530447.jpg HTTP/1.1" 200 2213698
+[07/Jan/2025 09:46:49] "GET /media/output_55.jpg HTTP/1.1" 200 2245381
+
+0: 640x288 1 dog, 1 cell phone, 305.0ms
+Speed: 3.8ms preprocess, 305.0ms inference, 1.8ms postprocess per image at shape (1, 3, 640, 288)
+[07/Jan/2025 09:47:31] "POST / HTTP/1.1" 200 6215
+[07/Jan/2025 09:47:31] "GET /media/uploads/1000526460.jpg HTTP/1.1" 200 206362
+[07/Jan/2025 09:47:31] "GET /media/output_56.jpg HTTP/1.1" 200 171546
+
+0: 640x288 1 person, 248.9ms
+Speed: 2.5ms preprocess, 248.9ms inference, 1.8ms postprocess per image at shape (1, 3, 640, 288)
+[07/Jan/2025 09:47:58] "POST / HTTP/1.1" 200 6134
+[07/Jan/2025 09:47:58] "GET /media/output_57.jpg HTTP/1.1" 200 177002
+[07/Jan/2025 09:47:58] "GET /media/uploads/1000524715.jpg HTTP/1.1" 200 252649
+
+0: 640x288 (no detections), 303.1ms
+Speed: 3.6ms preprocess, 303.1ms inference, 1.2ms postprocess per image at shape (1, 3, 640, 288)
+[07/Jan/2025 09:48:12] "POST / HTTP/1.1" 200 6054
+[07/Jan/2025 09:48:12] "GET /media/output_58.jpg HTTP/1.1" 200 202679
+[07/Jan/2025 09:48:12] "GET /media/uploads/1000528651.jpg HTTP/1.1" 200 245842
+
+0: 448x640 2 cars, 1 truck, 408.2ms
+Speed: 8.9ms preprocess, 408.2ms inference, 1.8ms postprocess per image at shape (1, 3, 448, 640)
+[07/Jan/2025 09:59:59] "POST / HTTP/1.1" 200 6292
+[07/Jan/2025 10:00:00] "GET /media/uploads/trailer_HGwnoBN.jpg HTTP/1.1" 200 39363
+[07/Jan/2025 10:00:00] "GET /media/output_59.jpg HTTP/1.1" 200 73278
+[07/Jan/2025 10:00:37] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 10:00:39] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 10:07:04] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 10:17:15] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 10:22:29] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 10:22:44] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 10:35:49] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 10:36:11] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[07/Jan/2025 10:36:12] "GET /favicon.ico HTTP/1.0" 404 2636
+[07/Jan/2025 10:37:15] "GET / HTTP/1.0" 200 5316
+Not Found: /.env
+[07/Jan/2025 10:45:15] "GET /.env HTTP/1.0" 404 2615
+Forbidden (CSRF cookie not set.): /
+[07/Jan/2025 10:45:16] "POST / HTTP/1.0" 403 2855
+[07/Jan/2025 10:51:28] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 10:52:26] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 10:56:31] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 11:07:24] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 11:09:21] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 11:15:53] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 11:27:38] "GET / HTTP/1.1" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 11:30:27] "GET /agc/css/style.css HTTP/1.0" 404 2654
+Not Found: /.env
+[07/Jan/2025 11:40:17] "GET /.env HTTP/1.0" 404 2615
+[07/Jan/2025 11:47:56] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 12:01:29] "GET /admin/assets/js/views/login.js HTTP/1.0" 302 0
+Not Found: /agc/css/style.css
+[07/Jan/2025 12:03:47] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 12:12:36] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 12:12:37] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 12:15:25] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 12:21:46,905] - Broken pipe from ('167.94.145.96', 42856)
+[07/Jan/2025 12:21:50] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 12:21:50,458] - Broken pipe from ('167.94.145.96', 42918)
+[07/Jan/2025 12:21:54] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[07/Jan/2025 12:21:55] "GET /favicon.ico HTTP/1.1" 404 2641
+[07/Jan/2025 12:21:55] code 505, message Invalid HTTP version (2.0)
+[07/Jan/2025 12:21:55] "PRI * HTTP/2.0" 505 -
+[07/Jan/2025 12:26:56] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[07/Jan/2025 12:26:57] "GET /favicon.ico HTTP/1.1" 404 2636
+Not Found: /agc/css/style.css
+[07/Jan/2025 12:37:48] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 12:58:16] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 13:01:19] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 13:02:43] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 13:12:02] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 13:12:38] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 13:25:02] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 13:45:18] "GET /agc/css/style.css HTTP/1.0" 404 2654
+Not Found: /druid/index.html
+[07/Jan/2025 13:59:04] "GET /druid/index.html HTTP/1.0" 404 2651
+[07/Jan/2025 13:59:57] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[07/Jan/2025 14:05:39] "GET /favicon.ico HTTP/1.1" 404 2641
+[07/Jan/2025 14:06:16] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 14:10:25] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 14:19:35] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 14:28:59] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 14:47:20] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 14:54:06] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 15:01:50] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 15:22:58] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 15:39:05] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 15:39:21] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 15:44:44] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 15:52:34] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 15:52:38] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[07/Jan/2025 15:52:38] "GET /favicon.ico HTTP/1.0" 404 2636
+[07/Jan/2025 16:04:43] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 16:05:59] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 16:12:08] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 16:16:15] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[07/Jan/2025 16:16:15] "GET /favicon.ico HTTP/1.1" 404 2641
+
+0: 640x416 1 bird, 252.8ms
+Speed: 6.1ms preprocess, 252.8ms inference, 1.5ms postprocess per image at shape (1, 3, 640, 416)
+[07/Jan/2025 16:18:07] "POST / HTTP/1.1" 200 6125
+[07/Jan/2025 16:18:08] "GET /media/uploads/pa.webp HTTP/1.1" 200 297622
+[07/Jan/2025 16:18:09] "GET /media/output_60.jpg HTTP/1.1" 200 347489
+[07/Jan/2025 16:27:39] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 16:46:38] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 17:09:05] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 17:15:16] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 17:16:01] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 17:20:39] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 17:25:29] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 17:53:55] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 18:03:13] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 18:04:22] code 400, message Bad request version ('À\x14À')
+[07/Jan/2025 18:04:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jan/2025 18:05:58] "GET / HTTP/1.1" 200 5316
+[07/Jan/2025 18:24:07] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 18:27:56] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 18:28:21] "GET /admin/assets/js/views/login.js HTTP/1.0" 302 0
+[07/Jan/2025 18:38:53] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 18:44:49] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 19:12:19] "GET /agc/css/style.css HTTP/1.0" 404 2654
+Not Found: /agc/css/style.css
+[07/Jan/2025 19:45:53] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 19:49:05] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 19:54:42] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 20:01:38] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 20:11:01] "GET / HTTP/1.0" 200 5316
+Invalid HTTP_HOST header: 'example.com'. You may need to add 'example.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'example.com'. You may need to add 'example.com' to ALLOWED_HOSTS.
+Bad Request: /
+[07/Jan/2025 20:21:14] "GET / HTTP/1.0" 400 63359
+Not Found: /agc/css/style.css
+[07/Jan/2025 20:30:09] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 20:33:24] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 20:38:52] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 20:56:49] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 20:57:20] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 20:59:04] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[07/Jan/2025 20:59:05] "GET /favicon.ico HTTP/1.1" 404 2641
+
+0: 448x640 1 car, 293.4ms
+Speed: 6.0ms preprocess, 293.4ms inference, 2.3ms postprocess per image at shape (1, 3, 448, 640)
+[07/Jan/2025 20:59:45] "POST / HTTP/1.1" 200 6136
+[07/Jan/2025 20:59:45] "GET /media/uploads/audi-r8_mryQ2ts.jpg HTTP/1.1" 200 114557
+[07/Jan/2025 20:59:45] "GET /media/output_61.jpg HTTP/1.1" 200 194612
+[07/Jan/2025 21:00:18] "GET /media/output_61.jpg HTTP/1.1" 200 194612
+[07/Jan/2025 21:00:27] "GET / HTTP/1.1" 200 5316
+
+0: 640x288 (no detections), 166.4ms
+Speed: 3.2ms preprocess, 166.4ms inference, 0.9ms postprocess per image at shape (1, 3, 640, 288)
+[07/Jan/2025 21:00:40] "POST / HTTP/1.1" 200 6100
+[07/Jan/2025 21:00:41] "GET /media/uploads/459268316_1054217302760379_6439532183831554434_n_ySNEitB.jpg HTTP/1.1" 200 80803
+[07/Jan/2025 21:00:41] "GET /media/output_62.jpg HTTP/1.1" 200 145511
+[07/Jan/2025 21:00:52] "GET / HTTP/1.1" 200 5316
+
+0: 640x640 4 cups, 1 vase, 525.0ms
+Speed: 6.7ms preprocess, 525.0ms inference, 13.4ms postprocess per image at shape (1, 3, 640, 640)
+[07/Jan/2025 21:01:03] "POST / HTTP/1.1" 200 6442
+[07/Jan/2025 21:01:03] "GET /media/uploads/cups_lK16q4C.jpg HTTP/1.1" 200 10235
+[07/Jan/2025 21:01:03] "GET /media/output_63.jpg HTTP/1.1" 200 28416
+Not Found: /agc/css/style.css
+[07/Jan/2025 21:01:27] "GET /agc/css/style.css HTTP/1.0" 404 2654
+Not Found: /logon.htm
+[07/Jan/2025 21:02:00] "GET /logon.htm HTTP/1.0" 404 2625
+
+0: 384x640 (no detections), 330.8ms
+Speed: 5.0ms preprocess, 330.8ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+[07/Jan/2025 21:02:08] "POST / HTTP/1.1" 200 6050
+[07/Jan/2025 21:02:08] "GET /media/uploads/gigimg.jpg HTTP/1.1" 200 12396
+[07/Jan/2025 21:02:08] "GET /media/output_64.jpg HTTP/1.1" 200 20381
+
+0: 384x640 2 persons, 2 remotes, 335.5ms
+Speed: 4.4ms preprocess, 335.5ms inference, 2.9ms postprocess per image at shape (1, 3, 384, 640)
+[07/Jan/2025 21:02:58] "POST / HTTP/1.1" 200 6377
+[07/Jan/2025 21:02:58] "GET /media/uploads/phones_sA9JWlP.jpg HTTP/1.1" 200 289900
+[07/Jan/2025 21:02:58] "GET /media/output_65.jpg HTTP/1.1" 200 473248
+
+0: 480x640 7 persons, 2 buss, 1 truck, 2 umbrellas, 444.0ms
+Speed: 6.7ms preprocess, 444.0ms inference, 2.0ms postprocess per image at shape (1, 3, 480, 640)
+[07/Jan/2025 21:03:36] "POST / HTTP/1.1" 200 7014
+[07/Jan/2025 21:03:36] "GET /media/uploads/busStop_xKwFJlR.jpg HTTP/1.1" 200 216208
+[07/Jan/2025 21:03:36] "GET /media/output_66.jpg HTTP/1.1" 200 414061
+[07/Jan/2025 21:11:50] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[07/Jan/2025 21:11:51] "GET /favicon.ico HTTP/1.0" 404 2636
+Not Found: /agc/css/style.css
+[07/Jan/2025 21:44:15] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 21:52:20] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 22:26:45] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 22:27:24] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 22:39:21] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 23:11:30] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 23:12:01] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 23:20:06] "GET / HTTP/1.0" 200 5316
+[07/Jan/2025 23:52:11] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[07/Jan/2025 23:53:15] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[07/Jan/2025 23:56:20] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 00:06:33] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 00:08:32] "GET / HTTP/1.0" 200 5316
+Not Found: /sdk
+Not Found: /odinhttpcall1736294912
+[08/Jan/2025 00:08:32] "POST /sdk HTTP/1.0" 404 2613
+[08/Jan/2025 00:08:32] "GET /odinhttpcall1736294912 HTTP/1.0" 404 2669
+[08/Jan/2025 00:08:32] "GET / HTTP/1.0" 200 5316
+Not Found: /HNAP1
+[08/Jan/2025 00:08:32] "GET /HNAP1 HTTP/1.0" 404 2618
+Not Found: /evox/about
+[08/Jan/2025 00:08:33] "GET /evox/about HTTP/1.0" 404 2633
+[08/Jan/2025 00:08:33] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 00:08:33] "GET / HTTP/1.0" 200 5316
+Not Found: /solr/admin/info/system
+[08/Jan/2025 00:08:34] "GET /solr/admin/info/system HTTP/1.0" 404 2669
+Not Found: /v2/_catalog
+Not Found: /query
+[08/Jan/2025 00:08:34] "GET /query?q=SHOW+DIAGNOSTICS HTTP/1.0" 404 2637
+[08/Jan/2025 00:08:34] "GET /v2/_catalog HTTP/1.0" 404 2636
+Not Found: /cgi-bin/authLogin.cgi
+[08/Jan/2025 00:08:34] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 00:08:34] "GET /cgi-bin/authLogin.cgi HTTP/1.0" 404 2666
+Not Found: /solr/admin/cores
+[08/Jan/2025 00:08:34] "GET /solr/admin/cores?action=STATUS&wt=json HTTP/1.0" 404 2677
+[08/Jan/2025 00:15:24] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 00:16:10] "GET /admin/assets/js/views/login.js HTTP/1.0" 302 0
+Not Found: /agc/css/style.css
+[08/Jan/2025 00:33:04] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 00:49:11] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 00:52:50] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 01:03:24] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 01:31:26] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 01:34:02] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 01:36:56] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 01:47:38] code 400, message Bad request version ('À\x14À')
+[08/Jan/2025 01:47:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 02:05:35] "GET / HTTP/1.0" 200 5316
+Not Found: /.env
+[08/Jan/2025 02:07:55] "GET /.env HTTP/1.0" 404 2615
+Not Found: /agc/css/style.css
+[08/Jan/2025 02:10:59] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 02:15:44] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 02:31:09] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 02:35:14] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 02:35:14,755] - Broken pipe from ('198.235.24.116', 65100)
+[08/Jan/2025 02:39:28] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 02:42:49] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 02:47:10] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 02:54:07,121] - Broken pipe from ('199.45.155.79', 49014)
+[08/Jan/2025 02:54:10] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 02:54:10,711] - Broken pipe from ('199.45.155.79', 49036)
+[08/Jan/2025 02:54:14] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 02:54:14] "GET /favicon.ico HTTP/1.1" 404 2641
+[08/Jan/2025 02:54:15] code 505, message Invalid HTTP version (2.0)
+[08/Jan/2025 02:54:15] "PRI * HTTP/2.0" 505 -
+[08/Jan/2025 02:55:49] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 03:05:55] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 03:16:04] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 03:22:38] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 03:47:35] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 04:00:20] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 04:18:11] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 04:22:06] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 04:26:36] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 04:30:26] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 04:39:23] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 04:40:14] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 04:55:08] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 05:08:17] code 400, message Bad HTTP/0.9 request type ('\x04\x01\x00\x194eD')
+[08/Jan/2025 05:08:17] " 4eD	 " 400 -
+[08/Jan/2025 05:09:17] code 400, message Bad request syntax ('\x05\x01\x00')
+[08/Jan/2025 05:09:17] " " 400 -
+Invalid HTTP_HOST header: 'hotmail-com.olc.protection.outlook.com:25'. You may need to add 'hotmail-com.olc.protection.outlook.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'hotmail-com.olc.protection.outlook.com:25'. You may need to add 'hotmail-com.olc.protection.outlook.com' to ALLOWED_HOSTS.
+Bad Request: /hotmail-com.olc.protection.outlook.com:25
+[08/Jan/2025 05:09:17] "CONNECT hotmail-com.olc.protection.outlook.com:25 HTTP/1.1" 400 63312
+[08/Jan/2025 05:26:40] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 05:27:49] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 05:32:43] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 05:59:24] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 06:02:49] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 06:16:37] "GET /admin/assets/js/views/login.js HTTP/1.0" 302 0
+[08/Jan/2025 06:37:40] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 06:37:40,779] - Broken pipe from ('118.193.65.234', 34152)
+[08/Jan/2025 06:37:40] code 400, message Bad request version ('À\x13À')
+[08/Jan/2025 06:37:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 06:37:41] code 400, message Bad HTTP/0.9 request type ('t3')
+[08/Jan/2025 06:37:41] "t3 12.1.2" 400 -
+Not Found: /agc/css/style.css
+[08/Jan/2025 06:43:07] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 06:47:46] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 06:47:47] "GET /favicon.ico HTTP/1.1" 404 2641
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+[08/Jan/2025 06:47:48] "GET /robots.txt HTTP/1.1" 404 2638
+[08/Jan/2025 06:47:48] "GET /sitemap.xml HTTP/1.1" 404 2641
+[08/Jan/2025 07:05:15] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+[08/Jan/2025 07:05:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 07:05:15] code 400, message Bad request version ('µ\x14rm·\x92$]')
+[08/Jan/2025 07:05:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 07:05:16] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 07:05:17] "GET /favicon.ico HTTP/1.1" 404 2641
+[08/Jan/2025 07:05:18] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ªª\x00\x00\x00+\x00\x07\x06\x8a\x8a\x03\x04\x03\x03\x00')
+[08/Jan/2025 07:05:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 07:05:19] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sêê\x00\x00ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x003\x04ï\x04í::\x00\x01\x00\x11ì\x04Àö\x94\x137x®\\ÛsÜëXÝ¶/Å×~¼¸\x10\x1b¨B±')
+[08/Jan/2025 07:05:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 07:06:01] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01Di\x00\x05\x00\x03\x02h2\x00')
+[08/Jan/2025 07:06:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 07:06:03] code 400, message Bad request version ('\x00')
+[08/Jan/2025 07:06:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+0: 640x480 1 person, 1 book, 448.0ms
+Speed: 8.0ms preprocess, 448.0ms inference, 2.3ms postprocess per image at shape (1, 3, 640, 480)
+[08/Jan/2025 07:06:05] "POST / HTTP/1.1" 200 6221
+[08/Jan/2025 07:06:10] "GET /media/uploads/IMG_20240911_192916.jpg HTTP/1.1" 200 3408781
+[08/Jan/2025 07:06:13] "GET /media/output_67.jpg HTTP/1.1" 200 3450459
+[08/Jan/2025 07:06:35] "GET / HTTP/1.1" 200 5316
+
+0: 640x480 1 person, 1 tv, 425.3ms
+Speed: 8.0ms preprocess, 425.3ms inference, 2.9ms postprocess per image at shape (1, 3, 640, 480)
+[08/Jan/2025 07:09:29] "POST / HTTP/1.1" 200 6218
+[08/Jan/2025 07:09:38] "GET /media/uploads/IMG_20240911_192940.jpg HTTP/1.1" 200 2374248
+[08/Jan/2025 07:09:39] "GET /media/output_68.jpg HTTP/1.1" 200 2440025
+[08/Jan/2025 07:10:03] "GET / HTTP/1.1" 200 5316
+
+0: 640x480 1 bench, 425.6ms
+Speed: 4.7ms preprocess, 425.6ms inference, 2.2ms postprocess per image at shape (1, 3, 640, 480)
+[08/Jan/2025 07:10:14] "POST / HTTP/1.1" 200 6142
+[08/Jan/2025 07:10:14] "GET /media/uploads/IMG-20240904-WA0000.jpg HTTP/1.1" 200 186035
+[08/Jan/2025 07:10:14] "GET /media/output_69.jpg HTTP/1.1" 200 353308
+[08/Jan/2025 07:11:48] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 07:13:24] "GET / HTTP/1.0" 200 5316
+Not Found: /robots.txt
+[08/Jan/2025 07:20:29] "GET /robots.txt HTTP/1.1" 404 2633
+[08/Jan/2025 07:20:37] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 07:21:39] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 07:21:40] "GET / HTTP/1.1" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 07:23:40] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 07:30:05] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 07:34:53] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 07:34:57] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 07:34:57] "GET /favicon.ico HTTP/1.0" 404 2636
+[08/Jan/2025 07:39:40] code 400, message Bad request syntax ('\x04\x01\x00PPBS/\x00')
+[08/Jan/2025 07:39:40] " PPBS/ " 400 -
+[08/Jan/2025 07:40:40] code 400, message Bad request syntax ('\x05\x01\x00')
+[08/Jan/2025 07:40:40] " " 400 -
+Invalid HTTP_HOST header: '80.66.83.47:80'. You may need to add '80.66.83.47' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '80.66.83.47:80'. You may need to add '80.66.83.47' to ALLOWED_HOSTS.
+Bad Request: /80.66.83.47:80
+[08/Jan/2025 07:40:40] "CONNECT 80.66.83.47:80 HTTP/1.1" 400 62610
+Not Found: /agc/css/style.css
+[08/Jan/2025 08:08:08] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 08:12:17] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 08:21:28] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Íjj\x00\x00\x00#\x00\x00\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00\x00-\x00\x02\x01\x01\x00\x12\x00\x00ÿ\x01\x00\x01\x00\x00')
+[08/Jan/2025 08:21:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 08:21:28] code 400, message Bad request version ('´yú§')
+[08/Jan/2025 08:21:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 08:21:29] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 08:21:29] "GET /favicon.ico HTTP/1.1" 404 2641
+[08/Jan/2025 08:21:32] "GET / HTTP/1.1" 200 5316
+Not Found: /http:/197.137.64.118:8000/
+[08/Jan/2025 08:22:34] code 400, message Bad request version ('\x84¤HS2-\x8dp/\x01Ró')
+[08/Jan/2025 08:22:34] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 08:22:35] code 400, message Bad request version ('\x8f¾¿dã\x13)Â®\x8ax\x8c\x88¯')
+[08/Jan/2025 08:22:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 08:22:43] "POST http://197.137.64.118:8000/ HTTP/1.1" 404 1886
+[08/Jan/2025 08:29:11] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 08:31:53] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 08:35:09] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 08:39:32] "GET / HTTP/1.0" 200 5316
+Not Found: /boaform/admin/formLogin
+[08/Jan/2025 08:50:44] "GET /boaform/admin/formLogin?username=admin&psd=admin HTTP/1.0" 404 2701
+Not Found: /agc/css/style.css
+[08/Jan/2025 08:52:07] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 08:52:44] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 08:55:27] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 08:56:41] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 09:22:23] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 09:30:30] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 09:30:31] "GET /favicon.ico HTTP/1.1" 404 2641
+Not Found: /agc/css/style.css
+[08/Jan/2025 09:36:08] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 09:40:27,714] - Broken pipe from ('199.45.154.139', 43524)
+[08/Jan/2025 09:40:31] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 09:40:31,336] - Broken pipe from ('199.45.154.139', 43526)
+[08/Jan/2025 09:40:34] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 09:40:35] "GET /favicon.ico HTTP/1.1" 404 2641
+[08/Jan/2025 09:40:36] code 505, message Invalid HTTP version (2.0)
+[08/Jan/2025 09:40:36] "PRI * HTTP/2.0" 505 -
+[08/Jan/2025 09:54:03] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 09:57:29] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 10:19:42] "GET /agc/css/style.css HTTP/1.0" 404 2654
+Not Found: /actuator/health
+[08/Jan/2025 10:28:28] "GET /actuator/health HTTP/1.0" 404 2648
+[08/Jan/2025 10:32:39] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 10:38:50] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 10:43:24] "GET / HTTP/1.1" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 10:43:25] "GET /favicon.ico HTTP/1.1" 404 2641
+[08/Jan/2025 10:54:52] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 10:57:33] code 400, message Bad request syntax ('MGLNDD_197.137.64.118_8000')
+[08/Jan/2025 10:57:33] "MGLNDD_197.137.64.118_8000" 400 -
+Not Found: /agc/css/style.css
+[08/Jan/2025 11:03:31] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 11:17:18] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 11:19:32] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 11:33:05] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 11:46:13] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 11:53:41] "GET /admin/config.php HTTP/1.0" 302 0
+[08/Jan/2025 11:58:05] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 12:16:29] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 12:29:58] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 12:41:01] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 12:42:44] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 12:42:52] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 13:02:50] "GET /admin/assets/js/views/login.js HTTP/1.0" 302 0
+Not Found: /agc/css/style.css
+[08/Jan/2025 13:13:23] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 13:15:10] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 13:15:19] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 13:25:26] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 13:26:55] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 13:27:41] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:28:36] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:30:35] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ZZ\x00\x00\x00-\x00\x02\x01\x01\x00\x12\x00\x00ÿ\x01\x00\x01\x00\x00')
+[08/Jan/2025 13:30:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 13:30:35] code 400, message Bad request version ('\x9cÏÒzÆÀ¹.¹w\x9f\x1aß')
+[08/Jan/2025 13:30:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 13:30:38] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:33:48] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:02] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:02] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:03] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:04] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:04] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:04] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:04] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:05] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:05] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:05] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:06] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:06] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:06] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:06] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:07] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:07] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:07] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:07] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:08] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:34:15] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:35:28] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 13:37:52] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:38:00] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:40:26] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 13:42:07] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 13:42:50,400] - Broken pipe from ('147.185.132.108', 64114)
+[08/Jan/2025 13:56:13] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 13:56:44] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 14:07:24] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 14:08:31] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 14:23:21] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 14:23:57] code 400, message Bad request version ('=áûÆÀµ{Ï\x90')
+[08/Jan/2025 14:23:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 14:23:58] code 400, message Bad request version ('jðö\x90µÊ¢K\x08æ\x02F\x0e³t+Jùp:õ<K\x8eJ')
+[08/Jan/2025 14:23:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 14:23:58] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 14:24:14] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 14:24:15] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 14:24:16] "GET /favicon.ico HTTP/1.0" 404 2636
+[08/Jan/2025 14:24:31] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 14:24:43] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 14:24:48] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 14:24:57] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 14:25:01] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 14:25:25] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 14:25:26] "GET /favicon.ico HTTP/1.0" 404 2636
+[08/Jan/2025 14:32:29] "GET / HTTP/1.1" 200 5316
+[08/Jan/2025 14:32:38] code 400, message Bad request version ('¨\x838{óÄ@4´àcl2ÚÉ³ñP\x12')
+[08/Jan/2025 14:32:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 14:32:38] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 14:32:38] code 400, message Bad request version ('\x96d\x03SS\x10\x90}o\x02èaMZªT\x17\x84¥¡\x08\x8120+"\x00')
+[08/Jan/2025 14:32:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jan/2025 14:36:49] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 14:41:13] "GET / HTTP/1.0" 200 5316
+Not Found: /agc/css/style.css
+[08/Jan/2025 14:41:15] "GET /agc/css/style.css HTTP/1.0" 404 2654
+[08/Jan/2025 14:44:54] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 14:45:46] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 14:46:58] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 14:51:18] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 14:57:36] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 15:01:41] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 15:21:08] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 15:21:08] "GET /favicon.ico HTTP/1.0" 404 2636
+Invalid HTTP_HOST header: 'snf-6333.vlab.ac.ke'. You may need to add 'snf-6333.vlab.ac.ke' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'snf-6333.vlab.ac.ke'. You may need to add 'snf-6333.vlab.ac.ke' to ALLOWED_HOSTS.
+Bad Request: /
+[08/Jan/2025 15:25:20] "GET / HTTP/1.0" 400 64251
+Invalid HTTP_HOST header: 'snf-6333.vlab.ac.ke'. You may need to add 'snf-6333.vlab.ac.ke' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'snf-6333.vlab.ac.ke'. You may need to add 'snf-6333.vlab.ac.ke' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[08/Jan/2025 15:25:21] "GET /favicon.ico HTTP/1.0" 400 64201
+/home/user/object_detection_ui/object_detection_ui/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+[08/Jan/2025 15:37:24] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 15:37:26] "GET /favicon.ico HTTP/1.0" 404 2641
+Not Found: /robots.txt
+[08/Jan/2025 15:39:18] "GET /robots.txt HTTP/1.0" 404 2633
+[08/Jan/2025 15:39:24] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 15:39:29] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:02:37] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:04:46] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:08:49] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:17:38] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 16:17:39] "GET /favicon.ico HTTP/1.0" 404 2641
+[08/Jan/2025 16:21:22] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 16:21:24] "GET /favicon.ico HTTP/1.0" 404 2641
+[08/Jan/2025 16:26:04] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:26:40] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:28:26] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 16:28:27] "GET /favicon.ico HTTP/1.0" 404 2641
+[08/Jan/2025 16:32:10] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 16:32:12] "GET /favicon.ico HTTP/1.0" 404 2641
+[08/Jan/2025 16:33:14] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:37:01] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:37:13] "GET / HTTP/1.0" 200 5316
+Forbidden (Origin checking failed - https://snf-6333.vlab.ac.ke does not match any trusted origins.): /
+[08/Jan/2025 16:37:56] "POST / HTTP/1.0" 403 2560
+[08/Jan/2025 16:38:54] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:39:03] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 16:39:05] "GET /favicon.ico HTTP/1.0" 404 2641
+[08/Jan/2025 16:39:09] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:39:12] "GET / HTTP/1.0" 200 5316
+/home/user/object_detection_ui/object_detection_ui/settings.py changed, reloading.
+January 08, 2025 - 15:37:23
+Django version 5.1.4, using settings 'object_detection_ui.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 08, 2025 - 16:44:26
+Django version 5.1.4, using settings 'object_detection_ui.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+
+0: 640x640 3 persons, 1 car, 421.3ms
+Speed: 9.7ms preprocess, 421.3ms inference, 7.3ms postprocess per image at shape (1, 3, 640, 640)
+[08/Jan/2025 16:44:37] "POST / HTTP/1.0" 200 6377
+[08/Jan/2025 16:44:38] "GET /media/uploads/profileIMG_qZGblsE.jpg HTTP/1.0" 200 24039
+[08/Jan/2025 16:44:38] "GET /media/output_70.jpg HTTP/1.0" 200 53155
+[08/Jan/2025 16:44:56] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 16:44:57] "GET /favicon.ico HTTP/1.0" 404 2641
+[08/Jan/2025 16:45:30] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:45:39] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:45:57] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:46:33] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 16:46:33] "GET /favicon.ico HTTP/1.0" 404 2641
+[08/Jan/2025 16:47:53] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 16:47:54] "GET /favicon.ico HTTP/1.0" 404 2641
+
+0: 640x640 2 persons, 1 car, 2 trucks, 365.7ms
+Speed: 7.5ms preprocess, 365.7ms inference, 1.9ms postprocess per image at shape (1, 3, 640, 640)
+[08/Jan/2025 16:48:13] "POST / HTTP/1.0" 200 6449
+[08/Jan/2025 16:48:13] "GET /media/uploads/1000108925.jpg HTTP/1.0" 200 114305
+[08/Jan/2025 16:48:13] "GET /media/output_71.jpg HTTP/1.0" 200 289128
+[08/Jan/2025 16:49:08] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:49:20] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 16:49:22] "GET /favicon.ico HTTP/1.0" 404 2641
+[08/Jan/2025 16:50:05] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 16:50:06] "GET /favicon.ico HTTP/1.0" 404 2641
+
+[W108 16:50:21.532912449 NNPACK.cpp:61] Could not initialize NNPACK! Reason: Unsupported hardware.
+0: 288x640 1 scissors, 227.5ms
+Speed: 3.9ms preprocess, 227.5ms inference, 1.9ms postprocess per image at shape (1, 3, 288, 640)
+[08/Jan/2025 16:50:21] "POST / HTTP/1.0" 200 6136
+[08/Jan/2025 16:50:22] "GET /media/uploads/1000108920.jpg HTTP/1.0" 200 147257
+[08/Jan/2025 16:50:22] "GET /media/output_72.jpg HTTP/1.0" 200 305666
+[08/Jan/2025 16:50:57] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 16:52:21] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 16:52:23] "GET /favicon.ico HTTP/1.0" 404 2641
+[08/Jan/2025 17:01:13] "GET / HTTP/1.0" 200 5316
+Not Found: /wp-includes/ID3/license.txt
+[08/Jan/2025 17:03:16] "GET //wp-includes/ID3/license.txt HTTP/1.0" 404 2689
+Not Found: /feed/
+[08/Jan/2025 17:03:16] "GET //feed/ HTTP/1.0" 404 2623
+Not Found: /xmlrpc.php
+[08/Jan/2025 17:03:17] "GET //xmlrpc.php?rsd HTTP/1.0" 404 2642
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:17] "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2704
+Not Found: /web/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:18] "GET //web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2701
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:18] "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2719
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:18] "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2698
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:19] "GET //2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2704
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:19] "GET //2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2704
+Not Found: /2021/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:20] "GET //2021/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2704
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:20] "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2704
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:21] "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2701
+Not Found: /test/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:21] "GET //test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2704
+Not Found: /site/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:22] "GET //site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2704
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[08/Jan/2025 17:03:22] "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 2701
+[08/Jan/2025 17:04:21] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 17:58:31] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 18:07:52] "GET / HTTP/1.0" 200 5316
+Not Found: /favicon.ico
+[08/Jan/2025 18:07:53] "GET /favicon.ico HTTP/1.0" 404 2641
+
+0: 640x640 1 person, 1 traffic light, 430.9ms
+Speed: 9.1ms preprocess, 430.9ms inference, 3.2ms postprocess per image at shape (1, 3, 640, 640)
+[08/Jan/2025 18:08:26] "POST / HTTP/1.0" 200 6221
+[08/Jan/2025 18:08:26] "GET /media/uploads/1000136671.jpg HTTP/1.0" 200 190039
+[08/Jan/2025 18:08:26] "GET /media/output_73.jpg HTTP/1.0" 200 217426
+[08/Jan/2025 18:09:04] "GET / HTTP/1.0" 200 5316
+Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/user/abduction_env/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Bad Request: /admin/assets/js/views/login.js
+[08/Jan/2025 18:11:44] "GET /admin/assets/js/views/login.js HTTP/1.0" 400 63723
+[08/Jan/2025 18:16:02] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 18:19:41] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 18:21:24] "GET /media/output_70.jpg HTTP/1.0" 200 53155
+Not Found: /favicon.ico
+[08/Jan/2025 18:23:07] "GET /favicon.ico HTTP/1.0" 404 2636
+[08/Jan/2025 18:27:27] "GET / HTTP/1.0" 200 5316
+[08/Jan/2025 18:27:28] "GET / HTTP/1.0" 200 5316
