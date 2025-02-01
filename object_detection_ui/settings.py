@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-vb6=qak*zl#788^ui#fxlm#gz#0@6q1+n!f-!g&e@-3yk4&n%f
 DEBUG = True
 
 #ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['197.137.64.118', 'localhost', '127.0.0.1', 'snf-6333.vlab.ac.ke']
+ALLOWED_HOSTS = ['www.oman.risachengineering.com', 'localhost', '127.0.0.1', 'oman.risachengineering.com']
 
-CSRF_TRUSTED_ORIGINS = [ 'https://snf-6333.vlab.ac.ke',
+CSRF_TRUSTED_ORIGINS = [ 'https://oman.risachengineering.com',
 ]
 
 # Application definition
