@@ -48,10 +48,6 @@ python manage.py makemigrations
 # Apply database migrations
 python manage.py migrate
 ```
-```bash
-# Collect all static files (including admin)
-python manage.py collectstatic --noinput
-```
 
 ## Usage
 
