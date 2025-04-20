@@ -40,6 +40,18 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+```bash
+# Create initial migrations
+python manage.py makemigrations
+```
+```bash
+# Apply database migrations
+python manage.py migrate
+```
+```bash
+# Collect all static files (including admin)
+python manage.py collectstatic --noinput
+```
 
 ## Usage
 
@@ -49,7 +61,6 @@ pip install -r requirements.txt
 ```bash
 gunicorn --bind 127.0.0.1:8007 object_detection_ui.wsgi:application --daemon
 ```
-
 **Development (All OS):**
 ```bash
 python manage.py runserver
