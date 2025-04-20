@@ -47,7 +47,7 @@ pip install -r requirements.txt
 
 **Production (Linux):**
 ```bash
-sudo -u user gunicorn --bind 127.0.0.1:8007 object_detection_ui.wsgi:application --daemon
+gunicorn --bind 127.0.0.1:8007 object_detection_ui.wsgi:application --daemon
 ```
 
 **Development (All OS):**
