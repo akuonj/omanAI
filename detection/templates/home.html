@@ -1,408 +1,217 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="omanAI: Object detection and classification powered by machine learning algorithms.">
-
     <title>omanAI</title>
 
-
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Heroicons -->
+    <script src="https://unpkg.com/@heroicons/v2.0.18/24/outline/index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <style>
-
-        /* Base Styles */
-
-        body {
-
-            font-family: 'Poppins', sans-serif;
-
-            margin: 0;
-
-            padding: 0;
-
-            background-color: #f4f7f6;
-
-            color: #333;
-
-        }
-
-
-        header {
-
-            background-color: #2b2b2b;
-
-            color: white;
-
-            padding: 20px;
-
-            text-align: center;
-
-        }
-
-
-        header h1 {
-
-            font-size: 2.5rem;
-
-            margin: 0;
-
-        }
-
-
-        .container {
-
-            width: 90%;
-
-            max-width: 1200px;
-
-            margin: 30px auto;
-
-            background-color: white;
-
-            padding: 20px;
-
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-
-            border-radius: 8px;
-
-        }
-
-
-        .description {
-
-            margin: 20px 0;
-
-            font-size: 1.2rem;
-
-        }
-
-
-        .form-section {
-
-            background-color: #f8f8f8;
-
-            padding: 30px;
-
-            border-radius: 8px;
-
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-        }
-
-
-        .form-section h2 {
-
-            font-size: 1.5rem;
-
-            margin-bottom: 15px;
-
-        }
-
-
-        .upload-btn {
-
-            background-color: #4CAF50;
-
-            color: white;
-
-            padding: 10px 20px;
-
-            font-size: 1.1rem;
-
-            border: none;
-
-            border-radius: 5px;
-
-            cursor: pointer;
-
-            transition: background-color 0.3s;
-
-        }
-
-
-        .upload-btn:hover {
-
-            background-color: #45a049;
-
-        }
-
-
-        .output-section {
-
-            margin-top: 30px;
-
-        }
-
-
-        .output-section img {
-
-            width: 100%;
-
-            max-width: 500px;
-
-            border-radius: 8px;
-
-        }
-
-
-        .classification-results {
-
-            margin-top: 20px;
-
-            font-size: 1.1rem;
-
-        }
-
-
-        .error-message {
-
-            color: red;
-
-            margin-top: 20px;
-
-        }
-
-
-        footer {
-
-            background-color: #2b2b2b;
-
-            color: white;
-
-            text-align: center;
-
-            padding: 10px 0;
-
-            margin-top: 40px;
-
-        }
-
-
-        /* Responsive Styles */
-
-        @media (max-width: 768px) {
-
-            header h1 {
-
-                font-size: 2rem; /* Reduce font size for mobile devices */
-
-            }
-
-
-            header p {
-
-                font-size: 1rem;
-
-            }
-
-
-            .container {
-
-                padding: 15px;
-
-            }
-
-
-            .description,
-
-            .form-section h2 {
-
-                font-size: 1rem;
-
-            }
-
-
-            .upload-btn {
-
-                font-size: 1rem;
-
-                padding: 8px 16px;
-
-            }
-
-
-            .output-section img {
-
-                max-width: 100%;
-
-            }
-
-
-            .classification-results {
-
-                font-size: 1rem;
-
-            }
-
-        }
-
-
-        @media (max-width: 480px) {
-
-            header h1 {
-
-                font-size: 1.5rem;
-
-            }
-
-
-            header p {
-
-                font-size: 0.9rem;
-
-            }
-
-
-            .container {
-
-                width: 95%;
-
-                padding: 10px;
-
-            }
-
-
-            .form-section,
-
-            .output-section {
-
-                padding: 15px;
-
-            }
-
-
-            .upload-btn {
-
-                font-size: 0.9rem;
-
-                padding: 6px 12px;
-
-            }
-
-        }
-
-    </style>
-
 </head>
 
-
-<body>
-
-
-    <header>
-
-        <h1>omanAI</h1>
-
-        <p>Developed by Joshua, a Computer Science graduate skilled in machine learning and web development. Successfully integrated a pretrained YOLO model into a Django-based system for object detection.</p>
-
+<body class="font-poppins bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen">
+    <header class="bg-gradient-to-r from-gray-900 to-blue-900 text-white py-12 shadow-xl relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 relative z-10">
+            <h1 class="text-5xl font-bold mb-4 animate-float">omanAI</h1>
+            <p class="text-xl text-blue-200 max-w-2xl">Developed by Joshua - Expert in AI-powered visual recognition systems</p>
+            <div class="absolute top-0 right-0 opacity-10 w-96 h-96">
+                <svg class="w-full h-full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M45,-74.3C58.3,-66.2,69,-53.7,76.2,-39.2C83.4,-24.7,87.1,-8.2,85.6,8C84.1,24.3,77.4,40.3,66.9,53.1C56.4,65.9,42.1,75.5,26.7,80.7C11.3,85.9,-5.2,86.7,-19.4,81.5C-33.6,76.3,-45.5,65,-57.2,52.7C-68.9,40.4,-80.4,27,-85.2,11.2C-90,-4.7,-88.1,-22.5,-79.7,-36.4C-71.3,-50.3,-56.5,-60.3,-41.3,-67.6C-26.1,-74.9,-10.4,-79.5,3.8,-85.3C18,-91.2,35.9,-98.3,45,-74.3Z" transform="translate(100 100)"/>
+                </svg>
+            </div>
+        </div>
     </header>
 
-
-    <div class="container">
-
-
-        <section class="description">
-
-            <h2>About omanAI</h2>
-
-            <p>omanAI combines powerful object detection and classification techniques. Just upload an image, and the AI will automatically detect objects and classify them with accuracy. Whether it's people, vehicles, or other common objects, omanAI delivers results with speed and precision.</p>
-
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <section class="mb-16 backdrop-blur-sm bg-white/80 rounded-3xl p-10 shadow-2xl">
+            <h2 class="text-4xl font-bold mb-6 text-gray-800 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+                Revolutionizing Visual Recognition
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                omanAI leverages cutting-edge deep learning models to deliver unparalleled accuracy in real-time object detection. 
+                Our advanced algorithms process visual data with human-like precision, powered by state-of-the-art neural networks.
+            </p>
         </section>
 
-
-        <section class="form-section">
-
-            <h2>Upload an Image for Object Detection and Classification</h2>
-
-            <form method="POST" enctype="multipart/form-data">
-
+        <section class="group bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-10 mb-16 transform transition-all duration-500 hover:shadow-3xl hover:-translate-y-2">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-4 bg-blue-100 rounded-xl">
+                    <hero-icon-outline-cloud-arrow-up class="w-8 h-8 text-blue-600"/>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">Image Analysis Portal</h2>
+            </div>
+            
+            <form method="POST" enctype="multipart/form-data" class="space-y-8">
                 {% csrf_token %}
-
-                {{ form.as_p }}
-
-                <button type="submit" class="upload-btn">Upload Image</button>
-
+                <div class="border-2 border-dashed border-gray-200 rounded-xl p-12 text-center transition-colors hover:border-blue-400">
+                    {{ form.as_p }}
+                </div>
+                <button type="submit" 
+                    class="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white text-xl font-semibold py-5 px-12 rounded-xl 
+                        transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-3
+                        max-w-xs mx-auto">
+                 <hero-icon-outline-sparkles class="w-7 h-7"/>
+                 Analyze
+                </button>
             </form>
-
         </section>
-
 
         {% if uploaded_image %}
-
-        <section class="output-section">
-
-            <h2>Detection and Classification Results</h2>
-
-            <p><strong>Uploaded Image:</strong></p>
-
-            <img src="{{ uploaded_image.url }}" alt="Uploaded Image">
-
-
-            <p><strong>Annotated Image:</strong></p>
-
-            <img src="{{ output_image }}" alt="Annotated Image">
-
-            <br />
-
-            <a href="{{ output_image }}" download>Download Output Image</a>
-
-            <br />
-
-
-            <!-- Display classification results -->
-
-            <div class="classification-results">
-
-                <h3>Detected Objects:</h3>
-
-                <ul>
-
-                    {% for item in detection_results %}
-
-                    <li>{{ item.name }} - Confidence: {{ item.confidence }}%</li>
-
-                    {% endfor %}
-
-                </ul>
-
+        <section id="results-section" class="space-y-12 animate-fade-in-up">
+            <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-10">
+                <h2 class="text-3xl font-bold mb-8 text-gray-800">Analysis Results</h2>
+                <div class="grid xl:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-br from-blue-50 to-green-50 p-6 rounded-2xl">
+                            <h3 class="text-xl font-semibold mb-4 text-gray-700">Original Image</h3>
+                            <div class="relative overflow-hidden rounded-xl shadow-lg">
+                                <img src="{{ uploaded_image.url }}" 
+                                     class="w-full h-[500px] object-contain bg-gray-50 transform transition-all duration-500 hover:scale-105 cursor-zoom-in"
+                                     onclick="openLightbox(this.src)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-br from-green-50 to-blue-50 p-6 rounded-2xl">
+                            <h3 class="text-xl font-semibold mb-4 text-gray-700">Annotated Detection</h3>
+                            <div class="relative overflow-hidden rounded-xl shadow-lg">
+                                <img src="{{ output_image }}" 
+                                     class="w-full h-[500px] object-contain bg-gray-50 transform transition-all duration-500 hover:scale-105 cursor-zoom-in"
+                                     onclick="openLightbox(this.src)">
+                            </div>
+                            <a href="{{ output_image }}" download 
+                                class="w-full mt-6 inline-flex items-center gap-3 bg-gray-900 text-white text-lg font-semibold py-4 px-8 rounded-xl 
+                                    hover:bg-gray-800 transition-all transform hover:scale-105 justify-center">
+                                <hero-icon-outline-arrow-down-tray class="w-6 h-6"/>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-
+            <div id="classification-results" class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-10">
+                <h3 class="text-3xl font-bold mb-6 text-gray-800">Detailed Breakdown</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {% for item in detection_results %}
+                    <div class="p-6 bg-gradient-to-br from-blue-50 to-green-50 rounded-xl transform transition-all hover:scale-[1.02]">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-lg font-semibold text-gray-700">{{ item.name }}</span>
+                                <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                                    <div class="bg-gradient-to-r from-blue-400 to-green-400 h-2 rounded-full" 
+                                         style="width: {{ item.confidence }}%"></div>
+                                </div>
+                            </div>
+                            <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+                                {{ item.confidence }}%
+                            </span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </section>
-
         {% endif %}
-
 
         {% if error %}
-
-        <div class="error-message">
-
-            <p>{{ error }}</p>
-
+        <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg animate-shake">
+            <div class="flex items-center gap-3">
+                <hero-icon-outline-exclamation-triangle class="w-6 h-6 text-red-600"/>
+                <p class="text-red-600 font-medium">{{ error }}</p>
+            </div>
         </div>
-
         {% endif %}
+    </main>
 
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" class="hidden fixed inset-0 bg-black/90 z-50 p-12 backdrop-blur-xl">
+        <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white/80 hover:text-white transition-colors">
+            <hero-icon-outline-x-mark class="w-8 h-8"/>
+        </button>
+        <img id="lightbox-img" class="w-full h-full object-contain animate-fade-in">
     </div>
 
-
-    <footer>
-
-        <p>&copy; 2025 omanAI - All Rights Reserved</p>
-
+    <footer class="bg-gray-900/90 backdrop-blur-sm text-gray-300 py-8 mt-24">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-lg">&copy; 2025 omanAI - Pioneering AI Vision Solutions</p>
+        </div>
     </footer>
 
+    <script>
+        // Lightbox functionality
+        function openLightbox(src) {
+            document.getElementById('lightbox').classList.remove('hidden');
+            document.getElementById('lightbox-img').src = src;
+        }
 
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+        }
+
+        // Anime.js animations
+        document.addEventListener('DOMContentLoaded', function() {
+            anime({
+                targets: '.animate-float',
+                translateY: [-10, 0],
+                opacity: [0, 1],
+                duration: 1500,
+                easing: 'easeOutElastic(1, .5)'
+            });
+
+            if (document.getElementById('results-section')) {
+                anime({
+                    targets: '#results-section',
+                    opacity: [0, 1],
+                    translateY: [50, 0],
+                    duration: 1000,
+                    easing: 'easeOutExpo'
+                });
+
+                anime({
+                    targets: '#classification-results div',
+                    opacity: [0, 1],
+                    translateY: [30, 0],
+                    delay: anime.stagger(80),
+                    duration: 600,
+                    easing: 'easeOutExpo'
+                });
+            }
+        });
+    </script>
+
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes fade-in-up {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 1s ease-out;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-12px); }
+            75% { transform: translateX(12px); }
+        }
+        .animate-shake {
+            animation: shake 0.4s ease-in-out;
+        }
+    </style>
 </body>
-
-
 </html>
-
