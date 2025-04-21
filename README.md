@@ -63,8 +63,8 @@ python manage.py runserver
 ```
 
 Access the application at:  
-🌐 [http://127.0.0.1:8007](http://127.0.0.1:8007) (Production)  
-🌐 [http://127.0.0.1:8000](http://127.0.0.1:8000) (Development)
+🌐 [http://127.0.0.1:8007](http://127.0.0.1:8007/omanAI) (Production)  
+🌐 [http://127.0.0.1:8000](http://127.0.0.1:8000/omanAI) (Development)
 
 ### How to Use
 
